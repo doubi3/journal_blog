@@ -13,6 +13,7 @@ class Article(models.Model):
     keywords = models.CharField(max_length=200, null=True)
     published_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now_add=True)
+    abstract = models.TextField()
     content = models.TextField()
     status = models.IntegerField(choices=STATUS, default=0)
 
